@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Cartão de Crédito</title>
+</head>
+<body>
+    <h1>Cartão de Crédito</h1>
+    <hr>
+
+    <section>
+        <div class="form">
+            <form action="">
+                <label for="cpf">CPF</label>
+                <input id="cpf" type="text" minlength="11" maxlength="11" placeholder="000.000.000-00">
+
+                <label for="nome">Nome Completo</label>
+                <input id="nome" type="text" placeholder="Digite o nome como está escrito no cartão">
+
+                <label for="numero">Número do Cartão</label>
+                <input id="numero" type="number" minlength="16" maxlength="16" pattern="[0-9]{16}" placeholder="0000.0000.0000.0000">
+
+                <div class="validade">
+                    <label for="">Validade</label>
+                    <select name="mes" id="mes">
+                        <option value="00">--Mês--</option>
+                        <option value="01">Janeiro</option>
+                        <option value="02">Fevereiro</option>
+                        <option value="03">Março</option>
+                    </select>
+
+                    <select name="ano" id="ano">
+                        <option value="00">--Ano--</option>
+                        <option value="23">2023</option>
+                        <option value="24">2024</option>
+                        <option value="24">2025</option>
+                    </select>
+                </div>
+
+                <label for="">CVV</label>
+                <input type="number" minlength="3" maxlength="3" pattern="[0-9]{3}" placeholder="Código de Segurança">
+
+                <button>Enviar</button>
+            </form>
+    
+        <div class="imagem">
+            <img src="cartao.svg" alt="Frente e verso de cartão">
+        </div>
+
+        <div class="imagem-form">
+            <div class="cartao-frente">
+                <div class="cartao-bandeira">
+                    VISA
+                </div>
+            
+                <div class="cartao-titular">
+                    Nome
+                </div> 
+                
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
